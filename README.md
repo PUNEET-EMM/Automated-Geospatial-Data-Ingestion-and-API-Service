@@ -21,20 +21,18 @@ This project is a FastAPI-based application for managing geo-data with PostgreSQ
    pip install -r requirements.txt
 ### Steps
 
- Clone the repository: ```bash git clone https://github.com/PUNEET-EMM/Automated-Geospatial-Data-Ingestion-and-API-Service.git```
- Move to directory   :      ```bash  cd <repository-folder> ```
+    Clone the repository:
 
-Configure the database:
+git clone <repository-url>
+cd <repository-folder>
+
+### Configure the database:
 
     Install PostgreSQL and enable PostGIS extension:
 
-sudo apt-get install postgresql postgresql-contrib postgis
 
-Start PostgreSQL service:
 
-sudo service postgresql start
-
-Create a database with PostGIS:
+### Create a database with PostGIS:
 
 CREATE DATABASE geo_database;
 \c geo_database;
@@ -44,7 +42,7 @@ Update the DATABASE_URL in app/config.py:
 
     DATABASE_URL = "postgresql://<username>:<password>@localhost:5432/geo_database"
 
-Run the application:
+### Run the application:
 
 uvicorn app.main:app --reload
 

@@ -21,8 +21,8 @@ This project is a FastAPI-based application for managing geo-data with PostgreSQ
    pip install -r requirements.txt
 ### Steps
 
- Clone the repository: ```bash git clone <repository-url>
-        cd <repository-folder> ```
+ Clone the repository: ```bash git clone https://github.com/PUNEET-EMM/Automated-Geospatial-Data-Ingestion-and-API-Service.git```
+ Move to directory   :      ```bash  cd <repository-folder> ```
 
 Configure the database:
 

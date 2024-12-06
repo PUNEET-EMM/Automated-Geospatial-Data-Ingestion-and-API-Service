@@ -20,7 +20,7 @@ This project is a FastAPI-based application for managing geo-data with PostgreSQ
    ```bash
    pip install -r requirements.txt
 ```bash
-git clone <repository-url>
+git clone  https://github.com/PUNEET-EMM/Automated-Geospatial-Data-Ingestion-and-API-Service.git
 cd <repository-folder>
 ```
 
@@ -60,4 +60,48 @@ uvicorn app.main:app --reload
    Open your browser and visit the following URL to interact with the API documentation:
 
    [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+Docker Setup
+=============
+
+Prerequisites
+-------------
+- Docker and Docker Compose installed.
+
+Steps
+-----
+1. Build and run the Docker containers:
+    ```bash
+    docker-compose up --build
+    ```
+
+2. Access the application:
+    - Swagger UI: [http://localhost:8000/docs](http://localhost:8000/docs)
+
+API Endpoints
+-------------
+| Method | Endpoint                        | Description                     |
+|--------|---------------------------------|---------------------------------|
+| GET    | /geo_data/{geo_data_id}         | Get geo-data by ID              |
+| PUT    | /geo_data/{geo_data_id}         | Update geo-data by ID          |
+| DELETE | /geo_data/{geo_data_id}         | Delete geo-data by ID          |
+| PATCH  | /geo_data/{geo_data_id}         | Partially update geo-data      |
+| POST   | /geo_data                       | Create geo-data                |
+| GET    | /geo_data                       | Get all geo-data               |
+
+Swagger UI provides an interactive way to test these endpoints.
+
+Configuration
+-------------
+1. **Database URL**: Update the `DATABASE_URL` in `app/config.py`:
+    ```python
+    DATABASE_URL = "postgresql://<username>:<password>@localhost:5432/geo_database"
+    ```
+
+2. **GeoJSON URL**: Add your `GEOJSON_URL` in `app/config.py`:
+    ```python
+    GEOJSON_URL = "<your-geojson-url>"
+    ```
+
+
+
    

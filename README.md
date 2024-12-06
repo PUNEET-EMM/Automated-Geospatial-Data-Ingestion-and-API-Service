@@ -60,7 +60,8 @@ uvicorn app.main:app --reload
    Open your browser and visit the following URL to interact with the API documentation:
 
    [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
-Docker Setup
+
+### Docker Setup
 =============
 
 Prerequisites

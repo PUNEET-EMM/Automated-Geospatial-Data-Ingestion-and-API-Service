@@ -14,8 +14,9 @@ This project is a FastAPI-based application for managing geo-data with PostgreSQ
 ## Local Setup (Without Docker)
 
 ### Prerequisites
-1. **Python 3.10 or higher**
-2. **PostgreSQL with PostGIS enabled**
+ # **Python 3.10 or higher**
+ # **PostgreSQL with PostGIS enabled**
+
 
 1. **Clone  the repositry**
 ```bash

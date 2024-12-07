@@ -88,14 +88,55 @@ Here’s the updated and more descriptive API endpoints table to match the revis
 
 ## API Endpoints
 
-| **Method** | **Endpoint**                  | **Description**                           |
-|------------|-------------------------------|-------------------------------------------|
-| `GET`      | `/geo_data/view/{geo_data_id}` | Retrieve geo-data by ID.                  |
-| `PUT`      | `/geo_data/update/{geo_data_id}` | Update a geo-data entry by ID.            |
-| `DELETE`   | `/geo_data/delete/{geo_data_id}` | Delete a geo-data entry by ID.            |
-| `PATCH`    | `/geo_data/patch/{geo_data_id}` | Partially update a geo-data entry by ID.  |
-| `POST`     | `/geo_data/create`             | Create a new geo-data entry.              |
-| `GET`      | `/geo_data/list`               | Retrieve a list of all geo-data entries.  |
+| **Method** | **Endpoint**                          | **Description**                           |
+|------------|---------------------------------------|-------------------------------------------|
+| `GET`      | `/api/v1/geo_data/view/{geo_data_id}`  | Retrieve geo-data by ID.                  |
+| `PUT`      | `/api/v1/geo_data/update/{geo_data_id}` | Update a geo-data entry by ID.            |
+| `DELETE`   | `/api/v1/geo_data/delete/{geo_data_id}` | Delete a geo-data entry by ID.            |
+| `PATCH`    | `/api/v1/geo_data/patch/{geo_data_id}` | Partially update a geo-data entry by ID.  |
+| `POST`     | `/api/v1/geo_data/create`             | Create a new geo-data entry.              |
+| `GET`      | `/api/v1/geo_data/list`               | Retrieve a list of all geo-data entries.  |
+
+
+## Schema for Creating Geo-Data (`POST /api/v1/geo_data/create`)
+
+### Request Body:
+
+```json
+{
+  "name": "string",
+  "geometry": {
+    "type": "string",
+    "coordinates": [
+      [
+        [
+          -73.99756,
+          40.73083
+        ],
+        [
+          -73.996,
+          40.73177
+        ],
+        [
+          -73.996,
+          40.73288
+        ],
+        [
+          -73.99756,
+          40.73382
+        ],
+        [
+          -73.99756,
+          40.73083
+        ]
+      ]
+    ]
+  },
+  "properties": {
+    "key": "value"
+  }
+}
+
 
 
 Swagger UI provides an interactive way to test these endpoints.

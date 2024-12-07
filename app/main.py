@@ -18,4 +18,4 @@ async def on_startup():
 
 
 # Include the geospatial routes
-app.include_router(geo.router)
+app.include_router(geo.router,prefix="/api/v1")

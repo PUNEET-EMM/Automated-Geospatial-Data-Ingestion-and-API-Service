@@ -15,7 +15,7 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 # Copy the application folder and data ingestion script
 COPY app /app/app
-COPY app/data_ingestion.py /app/data_ingestion.py
+COPY data_ingestion.py /app/data_ingestion.py
 
 # Add the cron job configuration file
 COPY crontab /etc/cron.d/data-ingestion-cron

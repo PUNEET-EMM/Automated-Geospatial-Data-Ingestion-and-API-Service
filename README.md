@@ -16,13 +16,15 @@ This project is a FastAPI-based application for managing geo-data with PostgreSQ
 ### Prerequisites
 1. **Python 3.10 or higher**
 2. **PostgreSQL with PostGIS enabled**
-3. Install required Python packages:
-   ```bash
-   pip install -r requirements.txt
+
 ```bash
 git clone  https://github.com/PUNEET-EMM/Automated-Geospatial-Data-Ingestion-and-API-Service.git
 cd <repository-folder>
 ```
+ **Install required Python packages:**
+   ```bash
+   pip install -r requirements.txt
+
 
 2. **Configure the database:**
 
@@ -61,8 +63,9 @@ uvicorn app.main:app --reload
 
    [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
+
 ### Docker Setup
-=============
+==========================
 
 Prerequisites
 -------------
@@ -98,10 +101,8 @@ Configuration
     DATABASE_URL = "postgresql://<username>:<password>@localhost:5432/geo_database"
     ```
 
-2. **GeoJSON URL**: Add your `GEOJSON_URL` in `app/config.py`:
-    ```python
-    GEOJSON_URL = "<your-geojson-url>"
-    ```
+
+ 
 
 
 

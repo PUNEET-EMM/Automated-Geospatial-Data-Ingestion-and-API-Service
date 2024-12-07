@@ -84,16 +84,19 @@ Steps
 2. Access the application:
     - Swagger UI: [http://localhost:8000/docs](http://localhost:8000/docs)
 
-API Endpoints
--------------
-| Method | Endpoint                        | Description                     |
-|--------|---------------------------------|---------------------------------|
-| GET    | /geo_data/{geo_data_id}         | Get geo-data by ID              |
-| PUT    | /geo_data/{geo_data_id}         | Update geo-data by ID          |
-| DELETE | /geo_data/{geo_data_id}         | Delete geo-data by ID          |
-| PATCH  | /geo_data/{geo_data_id}         | Partially update geo-data      |
-| POST   | /geo_data                       | Create geo-data                |
-| GET    | /geo_data                       | Get all geo-data               |
+Here’s the updated and more descriptive API endpoints table to match the revised paths and naming conventions:
+
+## API Endpoints
+
+| **Method** | **Endpoint**                  | **Description**                           |
+|------------|-------------------------------|-------------------------------------------|
+| `GET`      | `/geo_data/view/{geo_data_id}` | Retrieve geo-data by ID.                  |
+| `PUT`      | `/geo_data/update/{geo_data_id}` | Update a geo-data entry by ID.            |
+| `DELETE`   | `/geo_data/delete/{geo_data_id}` | Delete a geo-data entry by ID.            |
+| `PATCH`    | `/geo_data/patch/{geo_data_id}` | Partially update a geo-data entry by ID.  |
+| `POST`     | `/geo_data/create`             | Create a new geo-data entry.              |
+| `GET`      | `/geo_data/list`               | Retrieve a list of all geo-data entries.  |
+
 
 Swagger UI provides an interactive way to test these endpoints.
 

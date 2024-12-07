@@ -24,6 +24,7 @@ cd <repository-folder>
  **Install required Python packages:**
    ```bash
    pip install -r requirements.txt
+   ```
 
 
 2. **Configure the database:**

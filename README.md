@@ -67,6 +67,7 @@ uvicorn app.main:app --reload
    [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
 
+
 ### Docker Setup
 ==========================
 
@@ -136,17 +137,12 @@ Here’s the updated and more descriptive API endpoints table to match the revis
     "key": "value"
   }
 }
-
+```
 
 
 Swagger UI provides an interactive way to test these endpoints.
 
-Configuration
--------------
-1. **Database URL**: Update the `DATABASE_URL` in `app/config.py`:
-    ```python
-    DATABASE_URL = "postgresql://<username>:<password>@localhost:5432/geo_database"
-    ```
+
 
 
  

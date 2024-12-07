@@ -17,6 +17,7 @@ This project is a FastAPI-based application for managing geo-data with PostgreSQ
 1. **Python 3.10 or higher**
 2. **PostgreSQL with PostGIS enabled**
 
+1. ***Copy the repo**
 ```bash
 git clone  https://github.com/PUNEET-EMM/Automated-Geospatial-Data-Ingestion-and-API-Service.git
 cd <repository-folder>

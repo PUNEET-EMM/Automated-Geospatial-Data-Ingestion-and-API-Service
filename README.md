@@ -107,7 +107,7 @@ Here’s the updated and more descriptive API endpoints table to match the revis
 {
   "name": "string",
   "geometry": {
-    "type": "string",
+    "type": "Polygon",
     "coordinates": [
       [
         [
